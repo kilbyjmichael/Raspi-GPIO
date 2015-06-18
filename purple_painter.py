@@ -24,6 +24,13 @@ def paint_line(onOff):
     for led in leds:
         gpio.output(leds[led], onOff)
 
+def paint__r_triangle():
+    led(leds[6], on)
+    time.sleep(1.3)
+    led(leds[6], off)
+    paint_line(on)
+    time.sleep(.3)
+    paint_line(off)
 
 def paint_waterfall():
     for led in leds:
